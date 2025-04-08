@@ -24,7 +24,7 @@ const ForgotPwd = () => {
   const handleForgotPwd = async (data) => {
     try {
       const req = await fetch(
-        "https://emma-burgers.onrender.com/api/auth/forgot-password",
+        "https://emma-burgers-twze.onrender.com/api/auth/forgot-password",
         {
           method: "POST",
           headers: {

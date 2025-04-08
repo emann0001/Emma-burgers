@@ -20,7 +20,8 @@ const SearchField = () => {
     const delaySearch = setTimeout(async () => {
       setIsLoading(true);
       try {
-        const response = await fetch(`${baseUrl}/api/product/products/search?query=${searchTerm}`);
+        
+        const response = await fetch(`https://emma-burgers-twze.onrender.com/api/product/products/search?query=${searchTerm}`);
         const data = await response.json();
         setSearchResults(data.products || []);
       } catch (error) {
