@@ -28,7 +28,7 @@ app.get("/",(req,res)=>{
 
 
 app.use((req,res)=>{
-    res.status(404).json({success:false,errMsg:"route not found"})
+    res.status(404).json({success:false,errMsg:"route not found"} )
 })
 
 connect()
