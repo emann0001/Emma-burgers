@@ -15,6 +15,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Order from "./pages/Order";
 import Checkout from "./pages/Checkout";
 import Information from "./components/Information";
+import PrivateRoute from "./routes/PrivateRoute.jsx";
 
 
 // const cartItemsFromLocalStorage = JSON.parse(localStorage.getItem('cart')) || []
@@ -100,8 +101,9 @@ function App() {
               <Route path="/product/:productId" element={<Product />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/Checkout" element={<Checkout/>} />
-              <Route path="/Order" element={<Order />} />
-              
+              <Route path="/Order" element={<PrivateRoute>
+                <Order/>
+              </PrivateRoute>}/>
             </Route>
             <Route path="/reset-password" element={<ResetPwd/>}/>
             <Route path="/forgot-password" element={<ForgotPwd/>}/>
