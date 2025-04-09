@@ -24,7 +24,7 @@ const ForgotPwd = () => {
   const handleForgotPwd = async (data) => {
     try {
       const req = await fetch(
-        "http://localhost:4040/api/auth/forgot-password",
+        `${baseUrl}/api/auth/forgot-password`,
         {
           method: "POST",
           headers: {
