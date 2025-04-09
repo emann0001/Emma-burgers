@@ -1,6 +1,6 @@
 import USER from "../models/userModel.js";
 
-import { sendForgotPasswordMail} from "../Emails/emailHandlers.js"
+import { sendForgotPasswordMail} from "../emails/emailHandlers.js"
 
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
