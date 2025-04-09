@@ -1,6 +1,8 @@
 import { createTransport } from "nodemailer";
 import { resetPasswordEmailTemplate } from "./emailTemplate.js";
 
+
+
 export const sendForgotPasswordMail = (options) => {
   const transporter = createTransport({
     service: "gmail",

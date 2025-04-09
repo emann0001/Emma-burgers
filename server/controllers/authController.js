@@ -1,4 +1,5 @@
 import USER from "../models/userModel.js";
+
 import { sendForgotPasswordMail } from "../Emails/emailHandlers.js";
 
 import crypto from "crypto";
