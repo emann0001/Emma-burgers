@@ -6,6 +6,7 @@ import { resetPasswordEmailTemplate } from "./emailTemplate.js";
 export const sendForgotPasswordMail = (options) => {
   const transporter = createTransport({
     service: "gmail",
+    type: "login",
     auth: {
       user: process.env.EMAIL_USERNAME,
       pass: process.env.EMAIL_PASSWORD,
