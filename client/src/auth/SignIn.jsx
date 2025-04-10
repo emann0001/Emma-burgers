@@ -33,7 +33,7 @@ const SignIn = ({switchToSignUp }) => {
   });
   const onSubmit = async (data) => {
     try {
-      const req = await fetch(`https://emma-burgers-1.onrender.com/api/auth/sign-in`, {
+      const req = await fetch(`http://localhost:4040/api/auth/sign-in`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

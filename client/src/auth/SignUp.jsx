@@ -35,7 +35,7 @@ const SignUp = ({ switchToSignIn }) => {
   const onSubmit = async (data) => {
     // setIsClicked(true);
     try {
-      const req = await fetch(`https://emma-burgers-1.onrender.com/api/auth/sign-up`, {
+      const req = await fetch(`http://localhost:4040/api/auth/sign-up`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
